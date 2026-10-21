@@ -36,7 +36,12 @@ section p{max-width:38rem}
 .proj h3{font-weight:500;font-size:1.5rem;margin-bottom:.35rem}
 .proj p{color:var(--mute)}
 footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);font-size:.95rem}
-@media(max-width:640px){section{grid-template-columns:1fr;gap:1rem}nav{gap:.9rem}}
+.hero{display:grid;grid-template-columns:1fr 17rem;gap:2.5rem;align-items:center}
+.foto{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:1.25rem;border:2px solid var(--ink);background:var(--line)}
+a.proj{display:block;text-decoration:none}
+a.proj:hover h3{color:var(--acc)}
+.go{display:inline-block;margin-top:.5rem;color:var(--acc);font-weight:600;font-size:.95rem}
+@media(max-width:640px){section{grid-template-columns:1fr;gap:1rem}nav{gap:.9rem}.hero{grid-template-columns:1fr}.foto{order:-1;max-width:13rem;margin-top:1rem}}
 </style>
 </head>
 <body>
@@ -49,11 +54,16 @@ footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);fon
   </header>
 
   <main>
+    <div class="hero">
+    <div>
     <h1>Fathir <span>Barokah</span></h1>
     <p class="lead">Halo, gue Muhammad Fathir Barokah Al-Anshor. Gue [pekerjaan/jurusan lu], dan di sini gue kumpulin hal-hal yang pernah gue kerjain.</p>
     <div class="btns">
       <a class="btn main" href="#proyek">Lihat proyek gue</a>
       <a class="btn" href="#kontak">Hubungi gue</a>
+    </div>
+    </div>
+    <img class="foto" src="foto.jpg" alt="Foto Muhammad Fathir Barokah Al-Anshor">
     </div>
 
     <section id="tentang">
@@ -71,9 +81,9 @@ footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);fon
     <section id="proyek">
       <h2>Proyek</h2>
       <div>
-        <div class="proj"><h3>Nama proyek pertama</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p></div>
-        <div class="proj"><h3>Nama proyek kedua</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p></div>
-        <div class="proj"><h3>Nama proyek ketiga</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p></div>
+        <a class="proj" href="proyek/proyek-1.pdf" target="_blank" rel="noopener"><h3>Nama proyek pertama</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
+        <a class="proj" href="proyek/proyek-2.pdf" target="_blank" rel="noopener"><h3>Nama proyek kedua</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
+        <a class="proj" href="proyek/proyek-3.pdf" target="_blank" rel="noopener"><h3>Nama proyek ketiga</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
       </div>
     </section>
 
