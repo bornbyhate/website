@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rangkuman Cyberpreneurship – Fathir Barokah</title>
+<meta name="description" content="Rangkuman Modul Perkuliahan 1 Cyberpreneurship: bisnis online, Revolusi Industri 4.0, dan 9 nilai Kebudiluhuran.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9eee8;--ink:#17262b;--mute:#52646a;--line:#c3cec6;--acc:#2a4bff}
+@media(prefers-color-scheme:dark){:root{--bg:#101a1d;--ink:#e6eee9;--mute:#9bb0b4;--line:#2a3b40;--acc:#7f93ff}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-weight:600}
+header a{text-decoration:none;color:var(--mute)}
+header a:hover{color:var(--ink)}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.08}
+h1{font-weight:800;font-size:clamp(2.4rem,8vw,5rem);letter-spacing:-.035em;margin:2.5rem 0 1rem}
+.lead{max-width:36rem;font-size:1.2rem;color:var(--mute);margin-bottom:4rem}
+section{border-top:2px solid var(--ink);padding:2.5rem 0;display:grid;grid-template-columns:10rem 1fr;gap:1.5rem}
+h2{font-weight:800;font-size:1.5rem;letter-spacing:-.02em}
+h3{font-weight:500;font-size:1.25rem;margin-bottom:.3rem}
+.body>*+*{margin-top:1.25rem}
+.body p,.body li{max-width:40rem}
+.body ul{padding-left:1.2rem}
+.body li+li{margin-top:.35rem}
+.mute{color:var(--mute)}
+.item{padding-bottom:1.25rem;border-bottom:1px solid var(--line)}
+.item:last-child{border:0}
+.item p{color:var(--mute)}
+.steps{list-style:none;padding:0!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:1rem}
+.steps li{border:1.5px solid var(--line);border-radius:1rem;padding:1rem}
+.steps b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.3rem;color:var(--acc);display:block}
+.tags{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0!important}
+.tags li{border:1.5px solid var(--line);padding:.35rem .9rem;border-radius:999px;font-weight:600;font-size:.95rem;margin:0!important}
+footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);font-size:.95rem}
+@media(max-width:640px){section{grid-template-columns:1fr;gap:1rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a href="index.html">Kembali ke portofolio</a><span>Cyberpreneurship</span></header>
+<main>
+<h1>Rangkuman Pertemuan 1</h1>
+<p class="lead">Pengenalan Cyberpreneurship: apa itu bisnis online, bagaimana Revolusi Industri 4.0 mengubah cara kita bekerja, dan 9 nilai Kebudiluhuran.</p>
+
+<section>
+<h2>Pengertian</h2>
+<div class="body">
+<p>Cyberpreneurship berasal dari kata <em>cyber</em> (internet) dan <em>entrepreneurship</em> (wirausaha). Artinya, kewirausahaan yang dijalankan lewat internet, atau yang sering disebut bisnis online.</p>
+<p>Untuk memulainya, kita perlu website atau blog, akun Google, dan media sosial.</p>
+</div>
+</section>
+
+<section>
+<h2>Bentuk bisnis online</h2>
+<div class="body">
+<div class="item"><h3>Menjual barang</h3><p>Bisa lewat toko online buatan sendiri (butuh HTML, CSS, JavaScript, PHP, dan database, contohnya Bhinneka), lewat CMS seperti WordPress + WooCommerce, PrestaShop, OpenCart, atau Magento (butuh domain dan hosting), atau lewat marketplace seperti Tokopedia, Shopee, dan Bukalapak yang gratis dan tanpa domain. Produk digital seperti PDF dan software juga bisa dijual.</p></div>
+<div class="item"><h3>Menjual jasa</h3><p>Keahlian seperti desain grafis, desain website, penerjemah, editing video, penulis artikel, dan pembuatan aplikasi bisa dijual lewat platform seperti freelancer.com dan dikerjakan secara remote.</p></div>
+<div class="item"><h3>Jual beli aset online</h3><p>Website, domain, akun media sosial, atau aplikasi bisa dijual jika punya banyak pengunjung, nama unik, atau penghasilan rutin. Contoh platformnya Flippa.</p></div>
+<div class="item"><h3>Affiliate marketer</h3><p>Mempromosikan produk orang lain dan mendapat komisi bila ada yang membeli lewat referensi kita. Contoh program afiliasi: Niagahoster, Amazon, Lazada, dan Blibli.</p></div>
+<div class="item"><h3>SEO dan SEM</h3><p>Dua cara agar website tampil di halaman pertama Google. SEO gratis tetapi butuh waktu lama, sedangkan SEM berbayar lewat Google Ads dan hasilnya cepat.</p></div>
+<div class="item"><h3>Lainnya</h3><p>Menjadi YouTuber, online tutor, menjalankan bisnis periklanan, membangun akun media sosial dengan banyak pengikut, atau membuat website ber-traffic tinggi.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Tahapan Revolusi Industri</h2>
+<div class="body">
+<ul class="steps">
+<li><b>RI 1.0</b>Abad ke-18. Penemuan mesin uap, kapal uap, dan kereta api.</li>
+<li><b>RI 2.0</b>Abad ke-19. Listrik dan assembly line meningkatkan produksi.</li>
+<li><b>RI 3.0</b>Abad ke-20. Teknologi informasi, komputer pribadi, dan komersialisasi.</li>
+<li><b>RI 4.0</b>Sekarang. Manufaktur terhubung lewat teknologi nirkabel dan big data.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Teknologi pendorong RI 4.0</h2>
+<div class="body">
+<div class="item"><h3>Internet of Things (IoT)</h3><p>Menghubungkan perangkat sehari-hari ke internet, mulai dari kulkas, TV, lampu, sampai mobil. Dampaknya terasa di manufaktur, logistik, kesehatan, pertanian, dan otomotif.</p></div>
+<div class="item"><h3>Big Data</h3><p>Data berukuran sangat besar, terstruktur maupun tidak, yang ditandai tiga hal: volume, velocity (kecepatan), dan variety (ragam). Membantu bisnis mengambil keputusan lebih baik.</p></div>
+<div class="item"><h3>Artificial Intelligence</h3><p>Teknologi yang membuat mesin punya kecerdasan mirip manusia. Makin banyak data yang diterima, prediksinya makin baik.</p></div>
+<div class="item"><h3>Cloud Computing</h3><p>Internet dipakai sebagai pusat penyimpanan data dan aplikasi, sehingga program bisa dijalankan tanpa instalasi software.</p></div>
+<div class="item"><h3>Additive Manufacturing</h3><p>Percetakan 3D yang mewujudkan desain digital menjadi produk fisik dengan bentuk dan ukuran yang sama.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Dampak, manfaat, dan tantangan</h2>
+<div class="body">
+<div class="item"><h3>Dampak</h3><p>Tenaga manusia banyak digantikan mesin, misalnya penjaga tol, teller bank, dan kasir tiket. Pola hidup berubah: belanja, transaksi, kuliah, bekerja, dan rapat bisa dilakukan tanpa keluar rumah. Di sisi lain, pabrik dan mesin menambah polusi dan limbah.</p></div>
+<div class="item"><h3>Tiga manfaat platform digital</h3><ul><li>Inovasi: model bisnis baru dan persaingan sehat.</li><li>Inklusivitas: layanan menjangkau daerah yang jauh dari kota besar.</li><li>Efisiensi: manufaktur dan pemasaran jadi lebih hemat.</li></ul></div>
+<div class="item"><h3>Tiga tantangan platform digital</h3><ul><li>Masalah kendali: perilaku publik berubah, misalnya toko ritel kalah oleh belanja online.</li><li>Ketidaksetaraan: ancaman kehilangan pekerjaan, jadi masyarakat perlu menyiapkan skill baru.</li><li>Kompetisi: platform yang memonopoli bisa menghilangkan pilihan pengguna.</li></ul></div>
+<p class="mute">Manfaat dan tantangan di atas disampaikan oleh Menko Perekonomian Darmin Nasution.</p>
+</div>
+</section>
+
+<section>
+<h2>9 nilai Kebudiluhuran</h2>
+<div class="body">
+<div class="item"><h3>Sabar mensyukuri</h3><p>Menerima dengan ikhlas kesenangan maupun kesedihan, tidak mudah marah, dan tidak mengeluh.</p></div>
+<div class="item"><h3>Cinta kasih</h3><p>Peduli pada sesama manusia, hewan, tumbuhan, dan lingkungan, serta mampu memahami perasaan orang lain.</p></div>
+<div class="item"><h3>Suka menolong</h3><p>Meringankan beban orang lain, peka kapan orang butuh bantuan, dan melayani tanpa diminta.</p></div>
+<div class="item"><h3>Jujur</h3><p>Menyatakan sesuatu apa adanya, tidak berpura-pura, dan tidak mengambil hak orang lain.</p></div>
+<div class="item"><h3>Tanggung jawab</h3><p>Taat aturan, menjalankan tugas sesuai fungsi, menepati janji, dan mengemban amanah.</p></div>
+<div class="item"><h3>Rendah hati</h3><p>Tidak menonjolkan diri, mengakui kelebihan orang lain dan kekurangan diri sendiri.</p></div>
+<div class="item"><h3>Toleransi</h3><p>Menghargai perbedaan suku, ras, agama, dan kelompok, serta tidak memaksakan kehendak.</p></div>
+<div class="item"><h3>Kerjasama</h3><p>Menyatukan kekuatan untuk tujuan bersama, saling membantu, dan berpikir fleksibel.</p></div>
+<div class="item"><h3>Sopan santun</h3><p>Berperilaku sesuai norma setempat, menghormati yang lebih tua, menyayangi yang lebih muda, dan membiasakan kata maaf, tolong, dan terima kasih.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Kesimpulan</h2>
+<div class="body">
+<p>Internet membuka banyak peluang usaha, dari menjual produk dan jasa sampai afiliasi dan iklan. Revolusi Industri 4.0 mengurangi kebutuhan tenaga manusia, jadi kita perlu terus mengasah skill. Nilai Kebudiluhuran harus tetap diterapkan dalam kehidupan sehari-hari.</p>
+</div>
+</section>
+</main>
+<footer>Sumber: Modul Mata Kuliah Cyberpreneurship KP225, Fakultas Teknologi Informasi, Universitas Budi Luhur (disusun oleh Wahyu Pramusinto, S.Kom, M.Kom dan Subandi, S.Kom, M.Kom).</footer>
+</div>
+</body>
+</html>
