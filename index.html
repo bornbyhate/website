@@ -4,50 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fathir Barokah – Portofolio</title>
-<meta name="description" content="Portofolio dan perkenalan diri Muhammad Fathir Barokah Al-Anshor.">
+<meta name="description" content="Portofolio dan perkenalan diri Muhammad Fathir Barokah Al-Anshor, mahasiswa Sistem Informasi Universitas Budi Luhur.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#e9eee8;--ink:#17262b;--mute:#52646a;--line:#c3cec6;--acc:#2a4bff;--acc-ink:#fff}
-@media(prefers-color-scheme:dark){:root{--bg:#101a1d;--ink:#e6eee9;--mute:#9bb0b4;--line:#2a3b40;--acc:#7f93ff;--acc-ink:#101a1d}}
+:root{--bg:#d4d6d2;--ink:#0e0e10;--card:#f6f5ef;--mute:#44464b;--blue:#2f3cff;--on-blue:#fff;--yel:#ffd400;--pink:#ff6fb1;--dark:#0e0e10}
+@media(prefers-color-scheme:dark){:root{--bg:#141417;--ink:#f3f1ea;--card:#1f1f24;--mute:#a9abb2;--blue:#7c86ff;--on-blue:#0e0e10}}
 *{box-sizing:border-box;margin:0}
-body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif;overflow-x:hidden}
 a{color:inherit}
-:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
-.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
-header{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
-nav{display:flex;gap:1.25rem;font-weight:600;font-size:.95rem}
-nav a{text-decoration:none;color:var(--mute)}
-nav a:hover{color:var(--ink)}
-h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.02}
-h1{font-weight:800;font-size:clamp(3.2rem,12vw,8.5rem);letter-spacing:-.04em;margin:3rem 0 1.5rem}
-h1 span{display:block;color:var(--acc)}
-.lead{max-width:34rem;font-size:1.25rem;color:var(--mute)}
-.btns{display:flex;gap:.75rem;margin:2rem 0 5rem;flex-wrap:wrap}
-.btn{padding:.8rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
-.btn.main{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
-section{border-top:2px solid var(--ink);padding:3rem 0;display:grid;grid-template-columns:10rem 1fr;gap:1.5rem}
-h2{font-weight:800;font-size:1.6rem;letter-spacing:-.02em}
-section p{max-width:38rem}
-.tags{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0}
-.tags li{border:1.5px solid var(--line);padding:.35rem .9rem;border-radius:999px;font-weight:600;font-size:.95rem}
-.proj{padding:1.25rem 0;border-bottom:1px solid var(--line)}
-.proj:first-child{padding-top:0}
-.proj h3{font-weight:500;font-size:1.5rem;margin-bottom:.35rem}
-.proj p{color:var(--mute)}
-footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);font-size:.95rem}
-.hero{display:grid;grid-template-columns:1fr 17rem;gap:2.5rem;align-items:center}
-.foto{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:1.25rem;border:2px solid var(--ink);background:var(--line)}
-a.proj{display:block;text-decoration:none}
-a.proj:hover h3{color:var(--acc)}
-.go{display:inline-block;margin-top:.5rem;color:var(--acc);font-weight:600;font-size:.95rem}
-@media(max-width:640px){section{grid-template-columns:1fr;gap:1rem}nav{gap:.9rem}.hero{grid-template-columns:1fr}.foto{order:-1;max-width:13rem;margin-top:1rem}}
+:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3,.big{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.95}
+
+.marquee{border-bottom:3px solid var(--ink);background:var(--yel);color:var(--dark);overflow:hidden;white-space:nowrap;font-family:Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;padding:.45rem 0}
+.track{display:inline-block;animation:run 28s linear infinite}
+.track span{padding:0 1.2rem}
+@keyframes run{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.track{animation:none}html{scroll-behavior:auto}}
+
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem 0}
+.logo{font-family:Anton,Impact,sans-serif;font-size:1.3rem;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:.5rem;overflow-x:auto;padding:.25rem}
+nav a{font-weight:700;font-size:.9rem;text-decoration:none;padding:.3rem .8rem;border:3px solid transparent;border-radius:999px;white-space:nowrap}
+nav a:hover{border-color:var(--ink);background:var(--card)}
+
+.hero{display:grid;grid-template-columns:1fr 18rem;gap:3rem;align-items:center;padding:2rem 0 4.5rem}
+h1{font-size:clamp(4.2rem,15vw,10.5rem);letter-spacing:.005em;margin-bottom:1.5rem}
+h1 span{display:block;color:var(--blue);text-shadow:5px 5px 0 var(--ink)}
+.lead{max-width:32rem;font-size:1.2rem;color:var(--mute)}
+.stickers{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0}
+.st{display:inline-block;padding:.3rem .9rem;border:3px solid var(--ink);border-radius:999px;font-weight:700;font-size:.9rem;color:var(--dark);background:var(--yel);transform:rotate(-3deg)}
+.st.p{background:var(--pink);transform:rotate(2deg)}
+.st.w{background:#fff;transform:rotate(-1deg)}
+.btns{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.75rem}
+.btn{padding:.75rem 1.5rem;border:3px solid var(--ink);border-radius:999px;font-weight:700;text-decoration:none;background:var(--card);box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn.main{background:var(--blue);color:var(--on-blue)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.polaroid{position:relative;transform:rotate(3deg)}
+.foto{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:4px solid var(--ink);border-radius:1.25rem;box-shadow:10px 10px 0 var(--ink);background:var(--card)}
+.polaroid .st{position:absolute;left:-1rem;bottom:1.25rem;transform:rotate(-6deg);font-size:1rem}
+
+section{padding:3.5rem 0}
+h2{display:inline-block;font-size:clamp(1.8rem,5vw,2.6rem);padding:.3rem .9rem .2rem;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink);color:var(--dark);background:var(--yel);transform:rotate(-1.5deg);margin-bottom:2rem}
+h2.p{background:var(--pink);transform:rotate(1deg)}
+h2.b{background:var(--blue);color:var(--on-blue);transform:rotate(-1deg)}
+.cards{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+.card{display:block;background:var(--card);border:3px solid var(--ink);border-radius:1rem;box-shadow:6px 6px 0 var(--ink);padding:1.4rem;text-decoration:none}
+a.card{transition:transform .15s,box-shadow .15s}
+a.card:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+.card h3{font-size:1.6rem;margin-bottom:.6rem}
+.card p{color:var(--mute)}
+.go{display:inline-block;margin-top:1rem;padding:.15rem .8rem;border:2px solid var(--ink);border-radius:999px;font-weight:700;font-size:.9rem;background:var(--blue);color:var(--on-blue)}
+.about{max-width:42rem;font-size:1.2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.8rem;list-style:none;padding:0}
+.chips li{padding:.45rem 1.1rem;border:3px solid var(--ink);border-radius:.8rem;font-weight:700;background:var(--card);box-shadow:3px 3px 0 var(--ink)}
+.chips li:nth-child(3n+1){transform:rotate(-2deg)}
+.chips li:nth-child(3n+2){transform:rotate(1.5deg);background:var(--yel);color:var(--dark)}
+.chips li:nth-child(3n){transform:rotate(-1deg);background:var(--pink);color:var(--dark)}
+.mail{display:block;font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(1.5rem,6.2vw,3.4rem);line-height:1.05;word-break:break-all;text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px;margin:.5rem 0 1.75rem}
+.mail:hover{color:var(--blue)}
+footer{border-top:3px solid var(--ink);padding:1.75rem 0 3rem;font-weight:600;color:var(--mute);font-size:.95rem}
+
+@media(max-width:700px){.hero{grid-template-columns:1fr;gap:2.5rem}.polaroid{max-width:15rem;order:-1;margin:1rem 0 0 .5rem}}
 </style>
 </head>
 <body>
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Skate</span><span>✦</span><span>Code</span><span>✦</span><span>Cyberpreneurship</span><span>✦</span><span>Jakarta Barat</span><span>✦</span>
+  <span>Skate</span><span>✦</span><span>Code</span><span>✦</span><span>Cyberpreneurship</span><span>✦</span><span>Jakarta Barat</span><span>✦</span>
+  <span>Skate</span><span>✦</span><span>Code</span><span>✦</span><span>Cyberpreneurship</span><span>✦</span><span>Jakarta Barat</span><span>✦</span>
+  <span>Skate</span><span>✦</span><span>Code</span><span>✦</span><span>Cyberpreneurship</span><span>✦</span><span>Jakarta Barat</span><span>✦</span>
+</div></div>
+
 <div class="wrap">
   <header>
-    <strong>fathirbarokah.my.id</strong>
+    <a class="logo" href="#">fathirbarokah</a>
     <nav aria-label="Menu utama">
       <a href="#tentang">Tentang</a><a href="#skill">Skill</a><a href="#proyek">Proyek</a><a href="#rangkuman">Rangkuman</a><a href="#kontak">Kontak</a>
     </nav>
@@ -55,50 +89,58 @@ a.proj:hover h3{color:var(--acc)}
 
   <main>
     <div class="hero">
-    <div>
-    <h1>Fathir <span>Barokah</span></h1>
-    <p class="lead">Halo, gue Muhammad Fathir Barokah Al-Anshor. gue Mahasiswa Sistem Informasi, dan di sini gue kumpulin hal-hal yang pernah gue kerjain.</p>
-    <div class="btns">
-      <a class="btn main" href="#proyek">Lihat proyek gue</a>
-      <a class="btn" href="#kontak">Hubungi gue</a>
-    </div>
-    </div>
-    <img class="foto" src="foto.jpg" alt="Foto Muhammad Fathir Barokah Al-Anshor">
+      <div>
+        <h1>Fathir <span>Barokah</span></h1>
+        <p class="lead">Halo, gue Muhammad Fathir Barokah Al-Anshor, mahasiswa Sistem Informasi. Di sini gue kumpulin hal-hal yang pernah gue kerjain.</p>
+        <div class="stickers"><span class="st">Semester 5</span><span class="st p">Budi Luhur</span><span class="st w">Jakarta Barat</span></div>
+        <div class="btns">
+          <a class="btn main" href="#proyek">Lihat proyek gue</a>
+          <a class="btn" href="#kontak">Hubungi gue</a>
+        </div>
+      </div>
+      <div class="polaroid">
+        <img class="foto" src="foto.jpg" alt="Foto Muhammad Fathir Barokah Al-Anshor">
+        <span class="st p">Skater</span>
+      </div>
     </div>
 
     <section id="tentang">
       <h2>Tentang</h2>
-      <p>gue mahasiswa semester 5 yang berkuliah di budi luhur, tinggal di Cengkareng, Jakarta Barat. Hobi Gue Main Skate .</p>
+      <div class="card about">
+        <p>Gue mahasiswa semester 5 yang kuliah di Universitas Budi Luhur, tinggal di Cengkareng, Jakarta Barat. Hobi gue main skate.</p>
+      </div>
     </section>
 
     <section id="skill">
-      <h2>Skill</h2>
-      <ul class="tags">
-        <li>HTML &amp; CSS</li><li>Microsoft Office</li><li>Desain</li><li>Komunikasi</li><li>[skill lain]</li>
+      <h2 class="p">Skill</h2>
+      <ul class="chips">
+        <li>HTML &amp; CSS</li><li>Microsoft Office</li><li>Desain</li><li>Komunikasi</li>
       </ul>
     </section>
 
     <section id="proyek">
-      <h2>Proyek</h2>
-      <div>
-        <a class="proj" href="proyek/proyek-1.pdf" target="_blank" rel="noopener"><h3>Nama proyek pertama</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
-        <a class="proj" href="proyek/proyek-2.pdf" target="_blank" rel="noopener"><h3>Nama proyek kedua</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
-        <a class="proj" href="proyek/proyek-3.pdf" target="_blank" rel="noopener"><h3>Nama proyek ketiga</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
+      <h2 class="b">Proyek</h2>
+      <div class="cards">
+        <a class="card" href="proyek/proyek-1.pdf" target="_blank" rel="noopener"><h3>Nama proyek pertama</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
+        <a class="card" href="proyek/proyek-2.pdf" target="_blank" rel="noopener"><h3>Nama proyek kedua</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
+        <a class="card" href="proyek/proyek-3.pdf" target="_blank" rel="noopener"><h3>Nama proyek ketiga</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p><span class="go">Buka PDF</span></a>
       </div>
     </section>
 
     <section id="rangkuman">
       <h2>Rangkuman Cyberpreneurship</h2>
-      <div>
-        <a class="proj" href="rangkuman.html"><h3>Pertemuan 1: Pengenalan Cyberpreneurship</h3><p>Bentuk bisnis online, Revolusi Industri 4.0, dan 9 nilai Kebudiluhuran.</p><span class="go">Baca rangkuman</span></a>
-        <a class="proj" href="rangkuman-3.html"><h3>Pertemuan 3: Domain dan Hosting</h3><p>Jenis domain, memilih nama domain, hosting, cPanel, dan Softaculous.</p><span class="go">Baca rangkuman</span></a>
-        <a class="proj" href="rangkuman-4.html"><h3>Pertemuan 4: Membuat Content di Blog</h3><p>Memilih kanal, riset dan strategi konten, etika, serta membuat blog di Blogger.</p><span class="go">Baca rangkuman</span></a>
+      <div class="cards">
+        <a class="card" href="rangkuman.html"><h3>Pertemuan 1</h3><p>Pengenalan Cyberpreneurship: bentuk bisnis online, Revolusi Industri 4.0, dan 9 nilai Kebudiluhuran.</p><span class="go">Baca rangkuman</span></a>
+        <a class="card" href="rangkuman-3.html"><h3>Pertemuan 3</h3><p>Domain dan Hosting: jenis domain, memilih nama domain, hosting, cPanel, dan Softaculous.</p><span class="go">Baca rangkuman</span></a>
+        <a class="card" href="rangkuman-4.html"><h3>Pertemuan 4</h3><p>Membuat Content di Blog: memilih kanal, riset dan strategi konten, etika, serta Blogger.</p><span class="go">Baca rangkuman</span></a>
       </div>
     </section>
 
     <section id="kontak">
-      <h2>Kontak</h2>
-      <p>Mau ngobrol atau kerja bareng? Kirim pesan ke <a href="mailto:emaillu@example.com">srvexuro026@gmail.com</a> atau cek <a href="https://github.com/bornbyhate">GitHub gue</a>.</p>
+      <h2 class="p">Kontak</h2>
+      <p class="about">Mau ngobrol atau kerja bareng? Kirim pesan ke:</p>
+      <a class="mail" href="mailto:srvexuro026@gmail.com">srvexuro026@gmail.com</a>
+      <a class="btn main" href="https://github.com/bornbyhate" target="_blank" rel="noopener">GitHub gue</a>
     </section>
   </main>
 
