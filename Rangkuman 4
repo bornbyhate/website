@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rangkuman Membuat Content di Blog – Fathir Barokah</title>
+<meta name="description" content="Rangkuman Pertemuan 4 Cyberpreneurship: memilih kanal konten, riset konten, strategi membuat konten, etika, dan membuat blog di Blogger.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9eee8;--ink:#17262b;--mute:#52646a;--line:#c3cec6;--acc:#2a4bff}
+@media(prefers-color-scheme:dark){:root{--bg:#101a1d;--ink:#e6eee9;--mute:#9bb0b4;--line:#2a3b40;--acc:#7f93ff}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-weight:600}
+header a{text-decoration:none;color:var(--mute)}
+header a:hover{color:var(--ink)}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.08}
+h1{font-weight:800;font-size:clamp(2.4rem,8vw,5rem);letter-spacing:-.035em;margin:2.5rem 0 1rem}
+.lead{max-width:36rem;font-size:1.2rem;color:var(--mute);margin-bottom:4rem}
+section{border-top:2px solid var(--ink);padding:2.5rem 0;display:grid;grid-template-columns:10rem 1fr;gap:1.5rem}
+h2{font-weight:800;font-size:1.5rem;letter-spacing:-.02em}
+h3{font-weight:500;font-size:1.25rem;margin-bottom:.3rem}
+.body{min-width:0}
+.body>*+*{margin-top:1.25rem}
+.body p,.body li{max-width:40rem}
+.body ul,.body ol{padding-left:1.3rem}
+.body li+li{margin-top:.35rem}
+.mute{color:var(--mute)}
+.item{padding-bottom:1.25rem;border-bottom:1px solid var(--line)}
+.item:last-child{border:0}
+.item p{color:var(--mute)}
+.item p+p{margin-top:.5rem}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0!important}
+.tags li{border:1.5px solid var(--line);padding:.2rem .8rem;border-radius:999px;font-weight:600;font-size:.9rem;margin:0!important}
+footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);font-size:.95rem}
+@media(max-width:640px){section{grid-template-columns:1fr;gap:1rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a href="index.html">Kembali ke portofolio</a><span>Cyberpreneurship</span></header>
+<main>
+<h1>Rangkuman Pertemuan 4</h1>
+<p class="lead">Membuat Content di Blog: memilih tempat publikasi, mencari ide, membuat konten yang baik dan beretika, lalu mulai menulis di blog.</p>
+
+<section>
+<h2>Mengapa konten penting</h2>
+<div class="body">
+<p>Konten adalah sesuatu yang mendatangkan pengunjung. Menurut rumus CTPM, untuk sukses berbisnis di internet kita harus membuat konten, dan konten baru harus diberikan secara rutin. Bentuknya bisa berupa postingan blog, postingan media sosial, atau video YouTube.</p>
+<ul>
+<li>Meningkatkan brand awareness.</li>
+<li>Menarik dan mempertahankan audiens.</li>
+<li>Meningkatkan SEO dan visibilitas di mesin pencari.</li>
+<li>Membangun kepercayaan dan otoritas.</li>
+<li>Meningkatkan engagement di media sosial.</li>
+<li>Meningkatkan konversi dan penjualan.</li>
+<li>Memberi nilai lebih kepada pelanggan.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Jenis konten</h2>
+<div class="body">
+<ul class="tags"><li>Artikel dan posting blog</li><li>Video</li><li>Infografis</li><li>Podcast</li><li>Konten media sosial</li><li>Email marketing</li><li>Webinar dan live streaming</li></ul>
+</div>
+</section>
+
+<section>
+<h2>Memilih kanal publikasi</h2>
+<div class="body">
+<p>Kanal yang tersedia banyak: Instagram, Facebook, YouTube, LinkedIn, blog atau website, forum diskusi, dan lainnya. Pilih maksimal 2–3 kanal dan fokus membangun konten di sana. Lebih baik fokus di sedikit kanal daripada membuat banyak kanal tetapi tidak terurus.</p>
+<div class="item"><h3>Sesuai target market</h3><p>Cari tahu di mana calon pembeli berkumpul. Misalnya anak muda lebih aktif di Instagram daripada Facebook.</p></div>
+<div class="item"><h3>Ikuti kanal pesaing</h3><p>Kalau kanal pesaing punya banyak follower, kita juga perlu hadir dan membuat konten di sana.</p></div>
+<div class="item"><h3>Pilih yang dikuasai</h3><p>Kalau tidak pandai mengedit video, jangan memilih YouTube, kecuali ada dana untuk membayar jasa editor.</p></div>
+<div class="item"><h3>Sesuaikan dengan jenis konten</h3><p>Artikel cocok untuk website. Video cocok untuk YouTube, Instagram Reels, TikTok, atau Facebook. Infografis cocok untuk Pinterest, Instagram, dan LinkedIn. Podcast bisa dipublikasikan di Spotify, Apple Podcasts, atau Google Podcasts.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Riset konten</h2>
+<div class="body">
+<div class="item"><h3>Tanya follower</h3><p>Libatkan audiens langsung untuk mengumpulkan masukan dan ide, supaya konten relevan dengan kebutuhan mereka.</p></div>
+<div class="item"><h3>Fokus pada niche yang dikuasai</h3><p>Dengan niche yang dikuasai, konten bisa lebih mendalam dan berotoritas, sehingga audiens lebih loyal.</p></div>
+<div class="item"><h3>Cek pertanyaan di platform tanya jawab</h3><p>Misalnya Quora. Dengan tahu apa yang ditanyakan orang, kita bisa membuat konten yang menjawabnya.</p></div>
+<div class="item"><h3>Review konten kompetitor</h3><p>Lihat kekuatan dan kelemahan konten mereka, lalu buat konten yang lebih baik atau berbeda.</p></div>
+<div class="item"><h3>Lihat forum diskusi</h3><p>Reddit, Kaskus, grup Facebook, Telegram, dan Discord bisa jadi referensi, terutama yang berkaitan dengan niche bisnis kita.</p></div>
+<div class="item"><h3>Analisis insight sendiri</h3><p>Pelajari performa postingan sebelumnya untuk tahu konten mana yang paling menarik perhatian, lalu ulangi keberhasilannya.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Strategi membuat konten</h2>
+<div class="body">
+<ol>
+<li><strong>Tentukan tujuan.</strong> Untuk traffic, fokus pada artikel blog yang ramah SEO. Untuk engagement, buat polling, kuis, atau video pendek. Untuk konversi, pakai testimoni dan studi kasus.</li>
+<li><strong>Kenali target audience.</strong> Tentukan usia, minat, dan kebiasaan online mereka, memakai data dari Google Analytics, insight media sosial, atau survei pelanggan.</li>
+<li><strong>Riset kata kunci untuk SEO.</strong> Pakai alat seperti Google Keyword Planner, Ahrefs, atau Ubersuggest. Pilih kata kunci dengan volume pencarian tinggi dan persaingan yang sesuai, misalnya kata kunci utama “strategi digital marketing” dan long-tail “strategi digital marketing untuk UMKM”.</li>
+<li><strong>Analisis tren dan kompetitor.</strong> Pakai Google Trends, BuzzSumo, atau media sosial untuk melihat topik yang sedang ramai.</li>
+<li><strong>Seimbangkan konten evergreen dan tren.</strong> Evergreen tetap relevan dalam jangka panjang (misalnya panduan dasar SEO), sedangkan konten tren mengikuti isu terkini untuk engagement cepat.</li>
+<li><strong>Gunakan content pillar.</strong> Pilih 3–5 topik utama, lalu buat sub-topik di bawahnya. Contoh untuk digital marketing: SEO, social media marketing, dan email marketing.</li>
+<li><strong>Buat kalender konten.</strong> Tentukan jadwal publikasi supaya konsisten, memakai Trello, Notion, atau Google Sheets.</li>
+<li><strong>Evaluasi dan optimasi.</strong> Pantau performa lewat Google Analytics atau Meta Insights, dan perbarui konten lama agar tetap relevan.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>Konten yang baik</h2>
+<div class="body">
+<ul>
+<li>Orisinal: berbeda dari konten orang lain, walau idenya sama, jangan menyontek 100%.</li>
+<li>Punya headline menarik yang tetap sesuai dengan isi konten.</li>
+<li>Menjawab pertanyaan atau masalah orang lain.</li>
+<li>Akurat, tanpa hoax atau informasi yang belum jelas kebenarannya.</li>
+<li>Memakai bahasa sehari-hari yang mudah dimengerti.</li>
+<li>Menyisipkan gambar atau video yang berhubungan, supaya pembaca tidak lelah dengan teks panjang.</li>
+<li>Diperbarui rutin, misalnya sehari sekali atau paling lama seminggu sekali.</li>
+<li>Menyebut sumber (link website, YouTube, atau media sosial) bila mengutip dari kanal lain.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Etika membuat konten</h2>
+<div class="body">
+<ul>
+<li>Informasi harus jujur dan sesuai fakta.</li>
+<li>Tidak membuat berita fitnah, sadis, atau cabul.</li>
+<li>Tidak menulis berdasarkan prasangka atau diskriminasi terhadap seseorang karena SARA, jenis kelamin, dan bahasa.</li>
+<li>Tidak merendahkan martabat orang lemah, miskin, sakit, atau penyandang disabilitas.</li>
+<li>Tidak menyebarkan hoax atau berita yang belum jelas kebenarannya.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Tentang blog</h2>
+<div class="body">
+<p>Blog adalah website berisi konten personal dalam bentuk artikel, video, foto, dan link ke website lain yang dikelola pemiliknya. Isi blog disebut postingan, dan biasanya ditampilkan dari yang terbaru ke yang terlama.</p>
+<div class="item"><h3>Penyedia blog gratis</h3>
+<ul class="tags"><li>Blogger</li><li>WordPress.com</li><li>Tumblr</li><li>Wix</li><li>Medium</li><li>Weebly</li><li>LiveJournal</li><li>Jimdo</li><li>SimpleSite</li><li>Svbtle</li></ul></div>
+<div class="item"><h3>Kelebihan Blogger</h3><p>Terintegrasi dengan akun Google, gratis, kapasitas hosting tanpa batas, dan satu akun bisa punya lebih dari 50 blog.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Membuat blog di Blogger</h2>
+<div class="body">
+<ol>
+<li>Login ke blogger.com memakai akun Google.</li>
+<li>Isi Display Name, lalu klik Continue to Blogger.</li>
+<li>Klik New Blog di kiri atas.</li>
+<li>Tulis judul blog, alamat blog, dan pilih tema. Alamatnya akan berakhiran .blogspot.com.</li>
+<li>Blog jadi dan kita diarahkan ke dashboard.</li>
+</ol>
+</div>
+</section>
+
+<section>
+<h2>Membuat postingan</h2>
+<div class="body">
+<ol>
+<li>Dari dashboard, klik New Post.</li>
+<li>Isi judul, isi artikel, dan label.</li>
+<li>Klik Publish untuk menayangkan di halaman depan blog.</li>
+</ol>
+<div class="item"><h3>Tips judul artikel</h3><p>Buat menarik agar mengundang klik, pakai angka, maksimal 60 karakter, dan tetap informatif.</p></div>
+<div class="item"><h3>Tips isi postingan</h3><p>Utamakan tulisan yang mudah dibaca manusia, bukan hanya mesin pencari. Isinya harus menjawab pertanyaan pengunjung (misalnya “cara membuat toko online”), sesuai dengan judul, dan memakai gaya bahasa yang cocok dengan target pembaca.</p></div>
+<div class="item"><h3>Tips label</h3><p>Di Blogger, label berfungsi seperti kata kunci atau hashtag. Isi dengan kata kunci yang berhubungan dengan artikel, dipisahkan koma.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Kesimpulan</h2>
+<div class="body">
+<p>Sesuai rumus CTPM, bisnis internet butuh konten, baik berupa postingan blog, media sosial, maupun video. Konten yang baik mendatangkan pengunjung. Blogger adalah layanan blog gratis yang bisa dipakai lewat akun Google.</p>
+</div>
+</section>
+</main>
+<footer>Sumber: materi kuliah Cyberpreneurship KP225 Pertemuan 4 (Membuat Content di Blog), Fakultas Teknologi Informasi, Universitas Budi Luhur. Rangkuman lain: <a href="rangkuman.html">Pertemuan 1</a> dan <a href="rangkuman-3.html">Pertemuan 3</a>.</footer>
+</div>
+</body>
+</html>
