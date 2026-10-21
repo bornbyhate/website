@@ -1,1 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fathir Barokah – Portofolio</title>
+<meta name="description" content="Portofolio dan perkenalan diri Muhammad Fathir Barokah Al-Anshor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9eee8;--ink:#17262b;--mute:#52646a;--line:#c3cec6;--acc:#2a4bff;--acc-ink:#fff}
+@media(prefers-color-scheme:dark){:root{--bg:#101a1d;--ink:#e6eee9;--mute:#9bb0b4;--line:#2a3b40;--acc:#7f93ff;--acc-ink:#101a1d}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0}
+nav{display:flex;gap:1.25rem;font-weight:600;font-size:.95rem}
+nav a{text-decoration:none;color:var(--mute)}
+nav a:hover{color:var(--ink)}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.02}
+h1{font-weight:800;font-size:clamp(3.2rem,12vw,8.5rem);letter-spacing:-.04em;margin:3rem 0 1.5rem}
+h1 span{display:block;color:var(--acc)}
+.lead{max-width:34rem;font-size:1.25rem;color:var(--mute)}
+.btns{display:flex;gap:.75rem;margin:2rem 0 5rem;flex-wrap:wrap}
+.btn{padding:.8rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.main{background:var(--acc);border-color:var(--acc);color:var(--acc-ink)}
+section{border-top:2px solid var(--ink);padding:3rem 0;display:grid;grid-template-columns:10rem 1fr;gap:1.5rem}
+h2{font-weight:800;font-size:1.6rem;letter-spacing:-.02em}
+section p{max-width:38rem}
+.tags{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0}
+.tags li{border:1.5px solid var(--line);padding:.35rem .9rem;border-radius:999px;font-weight:600;font-size:.95rem}
+.proj{padding:1.25rem 0;border-bottom:1px solid var(--line)}
+.proj:first-child{padding-top:0}
+.proj h3{font-weight:500;font-size:1.5rem;margin-bottom:.35rem}
+.proj p{color:var(--mute)}
+footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);font-size:.95rem}
+@media(max-width:640px){section{grid-template-columns:1fr;gap:1rem}nav{gap:.9rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <strong>fathirbarokah.my.id</strong>
+    <nav aria-label="Menu utama">
+      <a href="#tentang">Tentang</a><a href="#skill">Skill</a><a href="#proyek">Proyek</a><a href="#kontak">Kontak</a>
+    </nav>
+  </header>
 
+  <main>
+    <h1>Fathir <span>Barokah</span></h1>
+    <p class="lead">Halo, gue Muhammad Fathir Barokah Al-Anshor. Gue [pekerjaan/jurusan lu], dan di sini gue kumpulin hal-hal yang pernah gue kerjain.</p>
+    <div class="btns">
+      <a class="btn main" href="#proyek">Lihat proyek gue</a>
+      <a class="btn" href="#kontak">Hubungi gue</a>
+    </div>
+
+    <section id="tentang">
+      <h2>Tentang</h2>
+      <p>Tulis 2–3 kalimat tentang diri lu: asal, kuliah atau kerja di mana, apa yang lu suka, dan apa yang lagi lu pelajari. Ganti teks ini dengan cerita lu sendiri.</p>
+    </section>
+
+    <section id="skill">
+      <h2>Skill</h2>
+      <ul class="tags">
+        <li>HTML &amp; CSS</li><li>Microsoft Office</li><li>Desain</li><li>Komunikasi</li><li>[skill lain]</li>
+      </ul>
+    </section>
+
+    <section id="proyek">
+      <h2>Proyek</h2>
+      <div>
+        <div class="proj"><h3>Nama proyek pertama</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p></div>
+        <div class="proj"><h3>Nama proyek kedua</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p></div>
+        <div class="proj"><h3>Nama proyek ketiga</h3><p>Satu kalimat: apa itu, dan peran lu di dalamnya.</p></div>
+      </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <p>Mau ngobrol atau kerja bareng? Kirim pesan ke <a href="mailto:emaillu@example.com">emaillu@example.com</a> atau cek <a href="https://github.com/bornbyhate">GitHub gue</a>.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 Muhammad Fathir Barokah Al-Anshor</footer>
+</div>
+</body>
+</html>
