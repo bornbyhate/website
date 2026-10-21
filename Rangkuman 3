@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rangkuman Domain dan Hosting – Fathir Barokah</title>
+<meta name="description" content="Rangkuman Pertemuan 3 Cyberpreneurship: domain, jenis TLD, memilih nama domain, hosting, cPanel, dan Softaculous.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e9eee8;--ink:#17262b;--mute:#52646a;--line:#c3cec6;--acc:#2a4bff}
+@media(prefers-color-scheme:dark){:root{--bg:#101a1d;--ink:#e6eee9;--mute:#9bb0b4;--line:#2a3b40;--acc:#7f93ff}}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.5rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-weight:600}
+header a{text-decoration:none;color:var(--mute)}
+header a:hover{color:var(--ink)}
+h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;line-height:1.08}
+h1{font-weight:800;font-size:clamp(2.4rem,8vw,5rem);letter-spacing:-.035em;margin:2.5rem 0 1rem}
+.lead{max-width:36rem;font-size:1.2rem;color:var(--mute);margin-bottom:4rem}
+section{border-top:2px solid var(--ink);padding:2.5rem 0;display:grid;grid-template-columns:10rem 1fr;gap:1.5rem}
+h2{font-weight:800;font-size:1.5rem;letter-spacing:-.02em}
+h3{font-weight:500;font-size:1.25rem;margin-bottom:.3rem}
+.body{min-width:0}
+.body>*+*{margin-top:1.25rem}
+.body p,.body li{max-width:40rem}
+.body ul{padding-left:1.2rem}
+.body li+li{margin-top:.35rem}
+.mute{color:var(--mute)}
+.item{padding-bottom:1.25rem;border-bottom:1px solid var(--line)}
+.item:last-child{border:0}
+.item p{color:var(--mute)}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0!important;margin-top:.6rem}
+.tags li{border:1.5px solid var(--line);padding:.2rem .8rem;border-radius:999px;font-weight:600;font-size:.9rem;margin:0!important}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.97rem}
+th,td{text-align:left;padding:.6rem .8rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;border-bottom:2px solid var(--ink)}
+td:first-child{font-weight:600;color:var(--acc)}
+footer{border-top:2px solid var(--ink);padding:2rem 0 3rem;color:var(--mute);font-size:.95rem}
+@media(max-width:640px){section{grid-template-columns:1fr;gap:1rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a href="index.html">Kembali ke portofolio</a><span>Cyberpreneurship</span></header>
+<main>
+<h1>Rangkuman Pertemuan 3</h1>
+<p class="lead">Domain dan Hosting: dua hal yang dibutuhkan agar sebuah website bisa diakses di internet, dan cara memilih keduanya dengan tepat.</p>
+
+<section>
+<h2>Pengertian domain</h2>
+<div class="body">
+<p>Domain adalah nama alamat website di internet, misalnya google.com atau budiluhur.ac.id. Awalnya komputer di internet diakses lewat IP Address. Lalu DNS mengubah IP Address itu menjadi nama domain yang mudah diingat, sehingga website yang sama bisa dibuka lewat nama maupun angka IP-nya.</p>
+<p>Tidak semua IP Address bisa diakses dari internet. Yang bisa disebut IP Public.</p>
+</div>
+</section>
+
+<section>
+<h2>Jenis ekstensi domain (TLD)</h2>
+<div class="body">
+<div class="item"><h3>Original TLD</h3><p>.com untuk komersial, .org untuk organisasi, dan .net untuk network (ketiganya terbuka untuk umum). .edu untuk pendidikan, sedangkan .mil (militer) dan .gov (pemerintahan) khusus Amerika Serikat.</p></div>
+<div class="item"><h3>Country code TLD (ccTLD)</h3><p>Kode negara, seperti .id (Indonesia), .my (Malaysia), .sg (Singapura), .th (Thailand), .au (Australia), .uk (Inggris), .us (Amerika Serikat), .de (Jerman), .fr (Perancis), .in (India), .kr (Korea Selatan), .tv (Tuvalu), dan lainnya.</p></div>
+<div class="item"><h3>New TLD</h3><p>Ekstensi baru yang dibuat sesuai tujuan: .shop dan .store (toko online), .business (bisnis), .company (perusahaan), .tech (startup teknologi), .cloud (layanan cloud), .app (aplikasi), .art (seni), .club (organisasi), dan .name (pribadi).</p></div>
+</div>
+</section>
+
+<section>
+<h2>Domain .id</h2>
+<div class="body">
+<div class="scroll">
+<table>
+<thead><tr><th>Ekstensi</th><th>Kegunaan</th><th>Persyaratan</th></tr></thead>
+<tbody>
+<tr><td>.id</td><td>Bebas</td><td>Tidak ada persyaratan</td></tr>
+<tr><td>.my.id</td><td>Bebas</td><td>Tidak ada persyaratan</td></tr>
+<tr><td>.biz.id</td><td>Bebas</td><td>Tidak ada persyaratan</td></tr>
+<tr><td>.web.id</td><td>Personal</td><td>KTP penanggung jawab</td></tr>
+<tr><td>.co.id</td><td>Perusahaan</td><td>KTP penanggung jawab, SIUP/TDP atau akta notaris (cover halaman 1 dan NPWP perusahaan), surat kepemilikan merek (bila ada)</td></tr>
+<tr><td>.or.id</td><td>Organisasi</td><td>KTP pimpinan lembaga, akta notaris atau SK intern organisasi</td></tr>
+<tr><td>.ac.id</td><td>Akademik</td><td>KTP penanggung jawab, SK pendirian lembaga, akta notaris atau SK rektor, surat kuasa dari pimpinan lembaga</td></tr>
+<tr><td>.sch.id</td><td>Sekolah</td><td>KTP penanggung jawab, surat permohonan kepala sekolah, surat kuasa kepala sekolah</td></tr>
+<tr><td>.ponpes.id</td><td>Pondok pesantren</td><td>KTP penanggung jawab, surat pengantar dari kepala pondok atau institusi</td></tr>
+</tbody>
+</table>
+</div>
+<p class="mute">Contoh: domain situs ini, fathirbarokah.my.id, memakai ekstensi .my.id yang tanpa persyaratan.</p>
+</div>
+</section>
+
+<section>
+<h2>Aturan penamaan domain</h2>
+<div class="body">
+<ul>
+<li>Tidak boleh memakai spasi, dan huruf besar atau kecil tidak berpengaruh.</li>
+<li>Hanya boleh berisi huruf, angka (0–9, A–Z), dan tanda minus (-).</li>
+<li>Tidak boleh diawali atau diakhiri tanda minus, dan tidak boleh memakai simbol seperti !@#$%^&amp;.</li>
+<li>Panjang minimal 2 karakter dan maksimal 63 karakter, belum termasuk TLD.</li>
+</ul>
+</div>
+</section>
+
+<section>
+<h2>Cek pemilik domain</h2>
+<div class="body">
+<p>Data pemilik domain bisa dilihat lewat layanan whois, misalnya who.is. Cukup tulis nama domain lalu klik tombol cari. Hasilnya menampilkan kapan domain didaftarkan dan kapan kedaluwarsa, DNS, serta nama pemilik, organisasi, alamat, negara, nomor telepon, dan email.</p>
+<p>Data ini bisa disembunyikan dengan mengaktifkan whois protection, yang biasanya dikenai biaya tambahan dari registrar. Layanan whois juga berguna untuk mengecek apakah sebuah domain sudah dimiliki orang lain.</p>
+</div>
+</section>
+
+<section>
+<h2>ICANN, registry, dan registrar</h2>
+<div class="body">
+<div class="item"><h3>ICANN</h3><p>Lembaga internasional yang mengatur sistem nama domain (DNS) di seluruh dunia dan bertanggung jawab atas kebijakan pendaftaran serta pengelolaannya.</p></div>
+<div class="item"><h3>Registry</h3><p>Organisasi yang mengelola ekstensi domain tertentu. Verisign mengelola .com dan .net, PANDI mengelola .id, dan Public Interest Registry mengelola .org.</p></div>
+<div class="item"><h3>Registrar</h3><p>Perusahaan yang menjual dan mendaftarkan domain kepada pengguna, di bawah pengawasan registry dan ICANN.</p>
+<ul class="tags"><li>Idwebhost</li><li>Rumahweb</li><li>Niagahoster</li><li>Exabytes</li><li>Namecheap</li><li>Hostgator</li><li>GoDaddy</li><li>Hawkhost</li></ul></div>
+</div>
+</section>
+
+<section>
+<h2>Menentukan nama domain</h2>
+<div class="body">
+<div class="item"><h3>Sesuaikan dengan brand</h3><p>Pilih nama yang mewakili brand, seperti gramedia.com atau budiluhur.ac.id. Hindari nama yang melanggar hak cipta atau merek dagang, dan jangan pakai nama terkenal tanpa izin (misalnya facebookshop.com).</p></div>
+<div class="item"><h3>Sesuaikan dengan produk</h3><p>Kalau menjual buku, pakai nama seperti tokobuku.com. Nama yang relevan memudahkan pelanggan mengenali bisnis, membantu SEO, dan menambah kepercayaan. Sebaiknya jangan menjual produk lain di luar nama domain.</p></div>
+<div class="item"><h3>Pilih ekstensi yang tepat</h3><p>.com paling populer untuk bisnis umum, .id cocok untuk bisnis atau brand Indonesia, .org untuk organisasi nonprofit, dan .tech, .store, atau .app untuk kebutuhan spesifik. Utamakan .com, dan kalau sudah dipakai orang lain, pilih .co.id, .id, atau yang lain.</p></div>
+<div class="item"><h3>Mudah diingat</h3><p>Hindari nama yang terlalu panjang, ejaan rumit, serta angka dan tanda hubung. Kalau terpaksa memakai angka, taruh di depan atau belakang (21cineplex.com, mobil88.com), bukan di tengah. Memilih domain tidak sama dengan memilih password.</p></div>
+<div class="item"><h3>Pertimbangkan harga</h3><p>Pilih registrar yang terpercaya. Domain dibeli per tahun, jadi cek juga harga perpanjangan karena harga promo awal bisa jauh lebih murah. Harga yang tertera kadang belum termasuk PPN.</p></div>
+<div class="item"><h3>Pakai kata kunci</h3><p>Kalau menargetkan kata kunci “jual sepatu bola”, domain jualsepatubola.com membuat peluang muncul di halaman pertama Google lebih tinggi.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Istilah terkait domain</h2>
+<div class="body">
+<div class="item"><h3>Subdomain</h3><p>Bagian dari domain utama untuk memisahkan bagian tertentu website, misalnya fti.budiluhur.ac.id.</p></div>
+<div class="item"><h3>Domain parked</h3><p>Domain yang sudah didaftarkan tetapi belum punya website, atau diarahkan ke halaman lain.</p></div>
+<div class="item"><h3>Domain expired</h3><p>Domain yang tidak diperpanjang pemiliknya, sehingga bisa didaftarkan lagi oleh orang lain.</p></div>
+<div class="item"><h3>DNS</h3><p>Domain Name System, sistem yang menerjemahkan domain menjadi alamat IP agar bisa diakses di internet.</p></div>
+<div class="item"><h3>Nameserver</h3><p>Server yang menyimpan informasi DNS suatu domain dan menentukan ke mana domain diarahkan.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Hosting</h2>
+<div class="body">
+<p>Hosting adalah tempat menyimpan script web, database, gambar, dan video supaya website bisa diakses di internet. Hosting bisa dibeli bulanan atau tahunan, dan beberapa registrar juga menyediakan paket 3 atau 6 bulan.</p>
+<div class="item"><h3>Jenis hosting</h3>
+<ul>
+<li>Shared hosting: server dipakai bersama banyak website, cocok untuk pemula.</li>
+<li>VPS: satu server dibagi jadi beberapa server virtual dengan akses lebih eksklusif.</li>
+<li>Cloud hosting: memakai beberapa server sekaligus untuk performa dan uptime lebih baik.</li>
+<li>Dedicated server: server fisik khusus satu pengguna, performanya tinggi tetapi mahal.</li>
+<li>WordPress hosting: dioptimalkan khusus untuk website WordPress.</li>
+</ul></div>
+<div class="item"><h3>Komponen hosting</h3>
+<ul>
+<li>Disk space: kapasitas penyimpanan file website.</li>
+<li>Bandwidth: jumlah data yang bisa ditransfer dalam periode tertentu.</li>
+<li>CPU dan RAM: menentukan kecepatan dan performa website.</li>
+<li>Web server: perangkat lunak yang melayani permintaan browser, seperti Apache dan Nginx.</li>
+<li>Control panel: alat pengelola server dan website, seperti cPanel, CyberPanel, dan Plesk.</li>
+<li>Database server: pengelola basis data, seperti MySQL/MariaDB dan PostgreSQL.</li>
+<li>Sistem operasi: yang menjalankan hosting, seperti Linux atau Windows.</li>
+</ul></div>
+</div>
+</section>
+
+<section>
+<h2>Tips memilih hosting</h2>
+<div class="body">
+<div class="item"><h3>Kapasitas penyimpanan</h3><p>Sesuaikan dengan tujuan website, apakah blog pribadi, toko online, atau e-learning. Tiap peruntukan butuh kapasitas berbeda, dan makin besar kapasitas, makin mahal harganya.</p></div>
+<div class="item"><h3>Bandwidth</h3><p>Setiap kunjungan memakai bandwidth, dan jumlahnya bergantung pada ukuran website (teks, foto, video) serta seberapa sering diakses. Sesuaikan dengan perkiraan traffic sebulan. Pemakaian direset tiap awal bulan, dan kini banyak penyedia yang menawarkan bandwidth unlimited.</p></div>
+<div class="item"><h3>Lokasi server</h3><p>Kecepatan akses dipengaruhi lokasi server. Kalau target pengunjung dari Indonesia, pilih server di Indonesia agar lebih cepat.</p></div>
+<div class="item"><h3>Fasilitas</h3><p>Cek bahasa pemrograman dan DBMS yang didukung, ada tidaknya cPanel dan Softaculous, apakah satu hosting bisa menampung lebih dari satu domain (add-on domain), serta jumlah email dan subdomain yang bisa dibuat.</p></div>
+<div class="item"><h3>Syarat dan ketentuan</h3><p>Baca aturan penyedia. Biasanya website judi, pornografi, SARA, pelanggaran hak cipta, dan penipuan dilarang. Software seperti pengirim spam, web proxy, bot IRC, dan file sharing berhak cipta juga umumnya tidak boleh.</p></div>
+</div>
+</section>
+
+<section>
+<h2>cPanel dan Softaculous</h2>
+<div class="body">
+<div class="item"><h3>cPanel</h3><p>Control panel hosting untuk mengelola hosting. Setelah membeli hosting, penyedia memberi username dan password, lalu cPanel bisa dibuka lewat namadomain.com/cpanel, atau lewat port 2082 dan 2083. Kegunaannya: membuat alamat email, membuat subdomain, mengatur file, mengatur add-on domain, backup file, dan melihat traffic website.</p></div>
+<div class="item"><h3>Softaculous</h3><p>Fitur di cPanel untuk menginstal CMS dengan mudah. Kita tinggal memilih CMS-nya, tanpa perlu mengunggah file CMS atau membuat database sendiri. Contohnya instalasi WordPress.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Kesimpulan</h2>
+<div class="body">
+<p>Untuk membuat website dibutuhkan domain dan hosting. Domain adalah nama website di internet, sedangkan hosting adalah tempat penyimpanan datanya. Keduanya bisa dibeli di registrar. cPanel mengelola data di hosting, dan di dalamnya ada Softaculous untuk menginstal CMS dengan mudah.</p>
+</div>
+</section>
+</main>
+<footer>Sumber: materi kuliah Cyberpreneurship KP225 Pertemuan 3 (Domain dan Hosting), Fakultas Teknologi Informasi, Universitas Budi Luhur. <a href="rangkuman.html">Lihat rangkuman Pertemuan 1</a>.</footer>
+</div>
+</body>
+</html>
