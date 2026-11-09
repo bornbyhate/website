@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toko Skate – Fathir Barokah</title>
+<meta name="description" content="Toko perlengkapan skate: deck, truck, wheel, bearing, grip tape, sepatu, dan apparel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#d4d6d2;--ink:#0e0e10;--card:#f6f5ef;--mute:#44464b;--blue:#2f3cff;--on-blue:#fff;--yel:#ffd400;--pink:#ff6fb1;--dark:#0e0e10}
+@media(prefers-color-scheme:dark){:root{--bg:#141417;--ink:#f3f1ea;--card:#1f1f24;--mute:#a9abb2;--blue:#7c86ff;--on-blue:#0e0e10}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.6 "Instrument Sans",system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+h1,h2,h3,.big{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;line-height:.95}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem 0}
+.logo{font-family:Anton,Impact,sans-serif;font-size:1.3rem;text-transform:uppercase;text-decoration:none;white-space:nowrap}
+.btn{padding:.6rem 1.3rem;border:3px solid var(--ink);border-radius:999px;font-weight:700;text-decoration:none;background:var(--card);box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s;display:inline-block}
+.btn.main{background:var(--blue);color:var(--on-blue)}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:4px 4px 0 var(--ink)}
+.count{display:inline-block;min-width:1.6rem;margin-left:.4rem;padding:0 .4rem;border-radius:999px;background:var(--yel);color:var(--dark);text-align:center;border:2px solid var(--ink)}
+
+.top{padding:1.5rem 0 2rem}
+h1{font-size:clamp(3.4rem,13vw,8rem);margin-bottom:1rem}
+h1 span{display:block;color:var(--blue);text-shadow:5px 5px 0 var(--ink)}
+.lead{max-width:34rem;color:var(--mute);font-size:1.15rem}
+
+.filters{display:flex;flex-wrap:wrap;gap:.6rem;margin:1.5rem 0 2rem}
+.f{padding:.35rem 1rem;border:3px solid var(--ink);border-radius:999px;font-weight:700;background:var(--card)}
+.f[aria-pressed="true"]{background:var(--yel);color:var(--dark);box-shadow:3px 3px 0 var(--ink)}
+
+.grid{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fill,minmax(14.5rem,1fr));padding-bottom:4rem}
+.p{background:var(--card);border:3px solid var(--ink);border-radius:1rem;box-shadow:6px 6px 0 var(--ink);overflow:hidden;display:flex;flex-direction:column}
+.art{aspect-ratio:1/1;display:grid;place-items:center;border-bottom:3px solid var(--ink);font-family:Anton,Impact,sans-serif;font-size:4.5rem;color:var(--dark);text-transform:uppercase}
+.art img{width:100%;height:100%;object-fit:cover;display:block}
+.info{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.info h3{font-size:1.35rem}
+.info small{color:var(--mute)}
+.price{font-weight:700;font-size:1.15rem}
+.add{margin-top:auto;padding:.5rem;border:3px solid var(--ink);border-radius:999px;font-weight:700;background:var(--blue);color:var(--on-blue)}
+.add:hover{background:var(--yel);color:var(--dark)}
+.empty{grid-column:1/-1;font-size:1.1rem}
+
+.shade{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .2s;z-index:20}
+.shade.on{opacity:1;pointer-events:auto}
+aside{position:fixed;top:0;right:0;bottom:0;width:min(26rem,100%);background:var(--bg);border-left:4px solid var(--ink);z-index:30;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .25s;visibility:hidden}
+aside.on{transform:none;visibility:visible}
+.ch{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.25rem;border-bottom:3px solid var(--ink)}
+.ch h2{font-size:1.8rem}
+.x{padding:.2rem .8rem;border:3px solid var(--ink);border-radius:999px;font-weight:700;background:var(--card)}
+.items{flex:1;overflow-y:auto;padding:1rem 1.25rem;display:flex;flex-direction:column;gap:.9rem}
+.it{background:var(--card);border:3px solid var(--ink);border-radius:.8rem;padding:.7rem .9rem;display:grid;gap:.4rem}
+.it b{font-size:1rem}
+.row{display:flex;justify-content:space-between;align-items:center;gap:.5rem}
+.q{display:flex;align-items:center;gap:.5rem}
+.q button{width:2rem;height:2rem;border:2px solid var(--ink);border-radius:50%;background:var(--yel);color:var(--dark);font-weight:700;line-height:1}
+.rm{border:0;background:none;text-decoration:underline;color:var(--mute);font-size:.9rem}
+.cf{padding:1.1rem 1.25rem 1.4rem;border-top:3px solid var(--ink);display:grid;gap:.7rem}
+.cf label{font-weight:700;font-size:.9rem}
+.cf input,.cf textarea{width:100%;padding:.55rem .8rem;border:3px solid var(--ink);border-radius:.7rem;background:var(--card);color:var(--ink);font:inherit}
+.tot{display:flex;justify-content:space-between;font-weight:700;font-size:1.2rem}
+.note{font-size:.85rem;color:var(--mute)}
+footer{border-top:3px solid var(--ink);padding:1.75rem 0 3rem;font-weight:600;color:var(--mute);font-size:.95rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="index.html">fathirbarokah</a>
+    <button class="btn main" id="open" aria-controls="cart">Keranjang<span class="count" id="n">0</span></button>
+  </header>
+
+  <main>
+    <div class="top">
+      <h1>Toko <span>Skate</span></h1>
+      <p class="lead">Perlengkapan skate pilihan gue. Masukin ke keranjang, lalu checkout lewat WhatsApp.</p>
+    </div>
+
+    <div class="filters" id="filters" role="group" aria-label="Filter kategori"></div>
+    <div class="grid" id="grid"></div>
+  </main>
+
+  <footer>© 2026 Muhammad Fathir Barokah Al-Anshor</footer>
+</div>
+
+<div class="shade" id="shade"></div>
+<aside id="cart" aria-label="Keranjang belanja" aria-hidden="true">
+  <div class="ch"><h2>Keranjang</h2><button class="x" id="close">Tutup</button></div>
+  <div class="items" id="items"></div>
+  <div class="cf">
+    <div class="tot"><span>Total</span><span id="total">Rp0</span></div>
+    <div><label for="nama">Nama</label><input id="nama" autocomplete="name"></div>
+    <div><label for="alamat">Alamat pengiriman</label><textarea id="alamat" rows="2" autocomplete="street-address"></textarea></div>
+    <button class="btn main" id="checkout" disabled>Pesan lewat WhatsApp</button>
+    <p class="note">Pesanan dikirim sebagai chat ke penjual. Pembayaran dan ongkir dibahas di chat.</p>
+  </div>
+</aside>
+
+<script>
+// ====== EDIT BAGIAN INI ======
+const WA = "6281234567890"; // nomor WhatsApp lo, format 62xxxxxxxxxx tanpa + atau 0
+// Ganti img dengan path foto produk, misal "produk/deck-1.jpg". Kosongin kalau belum ada foto.
+const PRODUK = [
+  {id:1,nama:"Deck Street 8.0\"",kat:"Deck",harga:650000,ket:"Maple 7 lapis, concave medium",warna:"#ffd400",img:""},
+  {id:2,nama:"Deck Cruiser 8.25\"",kat:"Deck",harga:720000,ket:"Cocok buat transisi dan bowl",warna:"#ff6fb1",img:""},
+  {id:3,nama:"Truck Set 139",kat:"Truck",harga:480000,ket:"Sepasang, axle baja",warna:"#9aa0ff",img:""},
+  {id:4,nama:"Wheel 52mm 99A",kat:"Wheel",harga:260000,ket:"Set 4, grip enak di aspal",warna:"#7ee0b0",img:""},
+  {id:5,nama:"Bearing ABEC 7",kat:"Aksesoris",harga:95000,ket:"Set 8, ringan dan awet",warna:"#ffd400",img:""},
+  {id:6,nama:"Grip Tape Hitam",kat:"Aksesoris",harga:45000,ket:"Lembar 9x33 inci",warna:"#ff6fb1",img:""},
+  {id:7,nama:"Sepatu Skate Low",kat:"Sepatu",harga:590000,ket:"Sol vulkanisir, tahan gesek",warna:"#9aa0ff",img:""},
+  {id:8,nama:"Helm Skate",kat:"Proteksi",harga:310000,ket:"Ringan, busa tebal",warna:"#7ee0b0",img:""},
+  {id:9,nama:"Kaos Skate Tee",kat:"Apparel",harga:150000,ket:"Cotton combed 24s",warna:"#ffd400",img:""}
+];
+// =============================
+
+const rp = n => "Rp" + n.toLocaleString("id-ID");
+const $ = id => document.getElementById(id);
+let cart = {}, filter = "Semua";
+try { cart = JSON.parse(localStorage.getItem("cart") || "{}") || {}; } catch(e){ cart = {}; }
+const save = () => { try { localStorage.setItem("cart", JSON.stringify(cart)); } catch(e){} };
+
+const kats = ["Semua", ...new Set(PRODUK.map(p => p.kat))];
+$("filters").innerHTML = kats.map(k => `<button class="f" aria-pressed="${k===filter}" data-k="${k}">${k}</button>`).join("");
+$("filters").addEventListener("click", e => {
+  const b = e.target.closest(".f"); if(!b) return;
+  filter = b.dataset.k;
+  document.querySelectorAll(".f").forEach(x => x.setAttribute("aria-pressed", x.dataset.k === filter));
+  drawGrid();
+});
+
+function drawGrid(){
+  const list = PRODUK.filter(p => filter === "Semua" || p.kat === filter);
+  $("grid").innerHTML = list.length ? list.map(p => `
+    <article class="p">
+      <div class="art" style="background:${p.warna}">${p.img ? `<img src="${p.img}" alt="${p.nama}" loading="lazy">` : p.kat.slice(0,2)}</div>
+      <div class="info">
+        <h3>${p.nama}</h3><small>${p.ket}</small>
+        <span class="price">${rp(p.harga)}</span>
+        <button class="add" data-id="${p.id}">Tambah ke keranjang</button>
+      </div>
+    </article>`).join("") : `<p class="empty">Belum ada produk di kategori ini.</p>`;
+}
+$("grid").addEventListener("click", e => {
+  const b = e.target.closest(".add"); if(!b) return;
+  cart[b.dataset.id] = (cart[b.dataset.id] || 0) + 1;
+  save(); drawCart();
+  b.textContent = "Masuk keranjang";
+  setTimeout(() => b.textContent = "Tambah ke keranjang", 1200);
+});
+
+function drawCart(){
+  const ids = Object.keys(cart).filter(id => cart[id] > 0 && PRODUK.some(p => p.id == id));
+  const qty = ids.reduce((s,id) => s + cart[id], 0);
+  const sum = ids.reduce((s,id) => s + cart[id] * PRODUK.find(p => p.id == id).harga, 0);
+  $("n").textContent = qty; $("total").textContent = rp(sum);
+  $("checkout").disabled = !qty;
+  $("items").innerHTML = ids.length ? ids.map(id => { const p = PRODUK.find(x => x.id == id); return `
+    <div class="it"><b>${p.nama}</b>
+      <div class="row"><div class="q"><button data-a="-" data-id="${id}" aria-label="Kurangi">−</button><span>${cart[id]}</span><button data-a="+" data-id="${id}" aria-label="Tambah">+</button></div><span>${rp(p.harga * cart[id])}</span></div>
+      <button class="rm" data-a="x" data-id="${id}">Hapus</button></div>`; }).join("")
+    : `<p>Keranjang masih kosong. Pilih produk dulu.</p>`;
+}
+$("items").addEventListener("click", e => {
+  const b = e.target.closest("button[data-a]"); if(!b) return;
+  const id = b.dataset.id, a = b.dataset.a;
+  if(a === "+") cart[id]++; else if(a === "-") cart[id]--; else cart[id] = 0;
+  if(cart[id] <= 0) delete cart[id];
+  save(); drawCart();
+});
+
+const setOpen = on => {
+  $("cart").classList.toggle("on", on); $("shade").classList.toggle("on", on);
+  $("cart").setAttribute("aria-hidden", !on);
+  if(on) $("close").focus(); else $("open").focus();
+};
+$("open").onclick = () => setOpen(true);
+$("close").onclick = $("shade").onclick = () => setOpen(false);
+document.addEventListener("keydown", e => { if(e.key === "Escape") setOpen(false); });
+
+$("checkout").onclick = () => {
+  const nama = $("nama").value.trim(), alamat = $("alamat").value.trim();
+  if(!nama || !alamat){ alert("Isi nama dan alamat pengiriman dulu."); return; }
+  const ids = Object.keys(cart).filter(id => cart[id] > 0);
+  let sum = 0;
+  const baris = ids.map(id => { const p = PRODUK.find(x => x.id == id); sum += p.harga * cart[id]; return `- ${p.nama} x${cart[id]} = ${rp(p.harga * cart[id])}`; });
+  const msg = `Halo, gue mau pesan:\n${baris.join("\n")}\n\nTotal: ${rp(sum)}\nNama: ${nama}\nAlamat: ${alamat}`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+};
+
+drawGrid(); drawCart();
+</script>
+</body>
+</html>
